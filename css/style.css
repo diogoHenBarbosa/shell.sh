@@ -102,16 +102,13 @@ main article {
   height: 450px;
 }
 
-main article section {
-  margin: auto;
-  display: flex
-}
-
 main article #section-content {
   width: 600px;
   position: relative;
-  display: flex;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main article section #img-section {
@@ -181,5 +178,15 @@ main article section #logo-rede-socias img {
   header .nav-menu ul li {
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  main article #section-content {
+    flex-direction: column;
+
+  }
+
+  main article section #logo-rede-socias {
+    padding-top: 20px;
+    justify-content: flex-start;
   }
 }
