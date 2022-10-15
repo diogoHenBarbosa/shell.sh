@@ -138,16 +138,6 @@ main article section #logo-rede-socias img {
 }
 
 @media (max-width:800px) {
-  header #logo img {
-    display: none;
-  }
-
-  header .logo-img {
-    width: 0;
-    height: 0;
-    left: 25;
-  }
-
   header .nav-menu ul li {
     display: inline;
     padding-right: 25px;
@@ -163,6 +153,7 @@ main article section #logo-rede-socias img {
   }
 
   header #logo {
+    padding-top: 20px;
     display: flex;
     align-items: center;
     height: 25px;
