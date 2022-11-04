@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,400&family=Silkscreen&display=swap');
 
 :root {
+  --background-color-folder: rgb(43, 43, 41);
   --background-color: rgb(30, 30, 30);
   --font-color: rgb(255, 255, 255);
+  --font-color-houver: rgb(251, 233, 71);
 }
 
 * {
@@ -81,12 +83,12 @@ header .nav-menu ul li a {
   font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 300;
   font-size: 16px;
-  color: --font-color;
+  color: var(--font-color);
   text-decoration: none;
 }
 
-header #nav-menu ul li a:hover {
-  color: rgb(24, 139, 233);
+header .nav-menu a:hover {
+  color: var(--font-color-houver);
 }
 
 main {
@@ -95,12 +97,39 @@ main {
   margin: auto;
 }
 
-main article {
+#article-index {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 450px;
 }
+
+main article .img-script img {
+  height: 80%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+main article section .content-script{
+  
+}
+main article section .content-script h3,
+p,
+h2 {
+  padding: 10px;
+}
+
+main .article-script .section-script {
+  padding-top:10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
 
 main article #section-content {
   width: 600px;
@@ -145,6 +174,13 @@ main article section #logo-rede-socias img {
   }
 }
 
+@media (min-width:960px) {
+  main article .img-script img {
+    width: 780px;
+    height: 310px;
+  }
+}
+
 
 @media (max-width:480px) {
   header .nav-menu .menu {
@@ -173,7 +209,8 @@ main article section #logo-rede-socias img {
 
   main article #section-content {
     flex-direction: column;
-
+    border-radius: 5px;
+    background: var(--background-color-folder);
   }
 
   main article section #logo-rede-socias {
